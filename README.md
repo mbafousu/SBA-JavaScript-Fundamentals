@@ -1,4 +1,4 @@
-# SBA 308 
+# SBA 308 JavaScript-Fundamentals 
 
 This project processes course, assignment group, and learner submission data to produce a weighted average per learner and assignment score percentages.
 
@@ -9,12 +9,5 @@ This project processes course, assignment group, and learner submission data to 
 - Uses arrays, objects, functions, conditionals, loops, and try/catch error handling
 
 ## How to Run
-1. Open `index.js`
-2. Run in CodeSandbox or Node:
-   - `node index.js`
-
-## Output
-Logs an array of learner objects:
-- `id`: learner id
-- `avg`: weighted average
-- assignment IDs as keys with score percentages
+1. Open `index.js` in VSCode
+2. Run `node index.js`
