@@ -34,22 +34,24 @@ const LearnerSubmissions = [
 
 // ------ Helper Function --------
 
+// if somthing that must be true is not true, stop the program and show an error message.
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+// convert a value into a naumber and make sure it really is a valid number.
 function toNumber(value, fieldName) {
   const num = Number(value);
   if (!Number.isFinite(num)) throw new Error(`Invalid number for ${fieldName}: ${value}`);
   return num;
 }
-
+// Turn a date sting into a Date object and mak sure it is a real date.
 function toDate(value, fieldName) {
   const d = new Date(value);
   if (Number.isNaN(d.getTime())) throw new Error(`Invalid date for ${fieldName}: ${value}`);
   return d;
 }
-
+// Round a number to 3 decimal
 function round3(n) {
   return Number(n.toFixed(3));
 }
